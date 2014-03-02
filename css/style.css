@@ -1,0 +1,279 @@
+html, body {
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+
+body {
+	position: relative;
+}
+
+a, a:link, a:active {
+	color: #851018;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	line-height: 1.5;
+}
+.limit ul {
+	margin-top: 1.53846182746%;
+	margin-bottom: 1.53846182746%;
+	margin-left: 0%;
+	padding-left: 0;
+}
+
+article > p{
+	font-size: 14pt;
+}
+
+section.cohort {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-top: 1.53846182746%;
+	margin-left: 1.53846182746%;
+	width: 32.3076983767%;
+
+	font-size: 14pt;
+}
+section.cohort:first-child {
+	margin-left: 0%;
+}
+section.cohort:nth-child(3n+1) {
+	margin-left: 0%;
+}
+
+section.cover {
+	margin-top: 1.53846182746%;
+}
+
+footer {
+	text-align: right;
+}
+
+.teal, .teal:link, .teal:active {
+	color: #39a0a7;
+}
+.gold, .gold:link, .gold:active {
+	color: #a87a00;
+}
+.maroon, .maroon:link, .maroon:active {
+	color: #851018;
+}
+
+.teal-back, a.teal-back {
+	color: white;
+	background-color: #39a0a7;
+}
+.gold-back, a.gold-back {
+	color: white;
+	background-color: #a87a00;
+}
+.maroon-back, a.maroon-back {
+	color: white;
+	background-color: #851018;
+}
+
+header h1 {
+	font-size: 42pt;
+	font-family: 'Patua One', sans-serif;
+}
+
+h1 {
+	font-size: 24pt;
+	font-family: 'Patua One', sans-serif;
+}
+.limit h1 {
+	margin-top: 1.53846182746%;
+	margin-bottom: 0%;
+}
+
+header h2 {
+	font-size: 24pt;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+.limit h2 {
+	font-size: 24pt;
+	margin-top: 1.53846182746%;
+	margin-bottom: 0%;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.blocks {
+	font-size: 0pt;
+}
+
+.block {
+	display: inline-block;
+
+	width: 9.00901%;
+	margin-top: 0.900901%;
+	margin-left: 0.900901%;
+
+	font-size: 48pt;
+	text-align: center;
+	line-height: 1.75em;
+
+	padding-bottom: 9.00901%;
+}
+
+.block > img {
+	-webkit-filter: grayscale(75%);
+	filter: grayscale(75%);
+}
+
+.block > img:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+
+.images {
+	font-size: 0pt;
+}
+
+.limit div.block {
+	overflow: hidden;
+	position: relative;
+
+	width: 15.3846182746%;
+	margin-top: 1.53846182746%;
+	margin-left: 1.53846182746%;
+	padding-bottom: 15.3846182746%;
+
+	font-size: 0pt;
+}
+
+.limit div.block:first-child {
+	margin-left: 0%;
+}
+
+.limit div.block:nth-child(6n+1) {
+	margin-left: 0%;
+}
+
+div.block > img {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: auto;
+	height: 100%;
+
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.block.bottom {
+	margin-bottom: 0.900901%;
+}
+
+.limit {
+	margin-left: 20.720723%;
+	margin-right: 20.720723%;
+	font-size: 0pt;
+}
+
+.brick {
+	display: inline-block;
+
+	font-size: 24pt;
+	font-family: 'Patua One', sans-serif;
+
+	margin-top: 0.900901%;
+	margin-left: 0.900901%;
+
+	padding: 0.900901%;
+}
+.limit .brick {
+	margin-top: 1.53846182746%;
+	margin-left: 1.53846182746%;
+	padding-left: 1.53846182746%;
+	padding-right: 1.53846182746%;
+}
+.brick:first-child {
+	margin-left: 0;
+}
+.brick.teal-back:hover {
+	color: #39a0a7;
+	background-color: white;
+}
+.brick.gold-back:hover {
+	color: #a87a00;
+	background-color: white;
+}
+.brick.maroon-back:hover {
+	color: #851018;
+	background-color: white;
+}
+
+.brick.teal:hover {
+	background-color: #39a0a7;
+	color: white;
+}
+.brick.gold:hover {
+	background-color: #a87a00;
+	color: white;
+}
+.brick.maroon:hover {
+	background-color: #851018;
+	color: white;
+}
+
+img.full {
+	width: 100%;
+	height: auto;
+}
+
+.surprise:hover {
+	background-image: url('../images/members/think.jpg');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: 75% 50%;
+}
+
+@media (max-width: 800px) {
+	.limit {
+		margin-left: 10.810812%;
+		margin-right: 10.810812%;
+	}
+}
+
+@media (max-width: 480px) {
+	.limit .brick {
+		display: block;
+		margin-left: 0%;
+	}
+
+	footer {
+		text-align: left;
+	}
+
+	header h1 {
+		font-size: 28pt;
+	}
+
+	header .limit h2 {
+		font-size: 16pt;
+	}
+
+	.limit h2 {
+		font-size: 20pt;
+	}
+
+	section.cohort {
+		width: 100%;
+		margin-left: 0%;
+	}
+}

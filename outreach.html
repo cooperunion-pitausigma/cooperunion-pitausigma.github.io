@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link href='//fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+
+		<title>Pi Tau Sigma</title>
+	</head>
+	<body>
+		
+		<header>
+			<div class="blocks">
+				<div class="block gold-back"></div><div class="block teal-back"></div><div class="block maroon-back"></div><div class="block gold-back"></div><div class="block teal-back"></div><div class="block maroon-back"></div><div class="block gold-back"></div><div class="block teal-back"></div><div class="block maroon-back"></div><div class="block gold-back"></div>
+			</div>
+
+			<div class="limit">
+				<h1>Pi Tau Sigma</h1>
+				<h2>Mechanical Engineering Honor Society at <a href="http://cooper.edu">The Cooper Union</a></h2>
+			</div>
+		</header>
+
+		<nav class="limit blocks">
+			<a class="brick gold-back" href="./index.html">About</a>
+			<a class="brick maroon-back" href="./members.html">Members</a>
+			<a class="brick teal-back" href="./outreach.html">Outreach</a>
+		</nav>
+
+		<article class="limit">
+			
+			<section>
+				<h1>Bronx Outreach</h1>
+
+				<img class="full" src="./images/outreach/outreach-1.jpg" />
+
+				<div class="images">
+					<div class="block"><img src="./images/outreach/outreach-1.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-2.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-3.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-4.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-5.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-6.jpg" /></div>
+
+					<div class="block"><img src="./images/outreach/outreach-7.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-8.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-9.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-10.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-11.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-12.jpg" /></div>
+
+					<div class="block"><img src="./images/outreach/outreach-13.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-14.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-15.jpg" /></div>
+				</div>
+			</section>
+
+			<section>
+				<h1>MELS @ Cooper</h1>
+
+				<img class="full" src="./images/outreach/mels.jpg" />
+
+				<div class="images">
+					<div class="block"><img src="./images/outreach/mels.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-16.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-17.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-18.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-19.jpg" /></div>
+					<div class="block"><img src="./images/outreach/outreach-20.jpg" /></div>
+				</div>
+			</section>
+		</article>
+
+		<footer class="limit blocks">
+			<a class="brick gold" href="http://www.pitausigma.net">Pi Tau Sigma</a>
+			<a class="brick maroon" href="http://cooper.edu">The Cooper Union</a>
+		</footer>
+
+		<div>
+			<div class="blocks">
+				<div class="block bottom gold-back"></div><div class="block bottom teal-back"></div><div class="block bottom maroon-back"></div><div class="block bottom gold-back"></div><div class="block bottom teal-back"></div><div class="block bottom maroon-back"></div><div class="block bottom gold-back"></div><div class="block bottom teal-back"></div><div class="block bottom maroon-back"></div><div class="block bottom gold-back"></div>
+			</div>
+		</div>
+
+		<script>
+			var forEach = Array.prototype.forEach;
+			var sections = document.querySelectorAll('.limit section');
+
+			forEach.call(sections, function(section) {
+				var imgs = section.querySelectorAll('.images img');
+
+				forEach.call(imgs, function(img) {
+					img.addEventListener('click', function(event) {
+						event.preventDefault();
+
+						var full = section.querySelector('img.full');
+						full.setAttribute('src', img.getAttribute('src'));
+					}, false);
+				})
+			});
+		</script>
+	</body>
+</html>
